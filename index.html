@@ -22,6 +22,18 @@
 </script>
 <html>
 <h1 >You did it!</h1>
+  <title>Example to send logs to Datadog</title>
+    <script type="text/javascript" src="https://www.datadoghq-browser-agent.com/datadog-logs-v4.js"></script>
+    <script>
+      window.DD_LOGS &&
+        DD_LOGS.init({
+          clientToken: 'pub8a65a70c40c31e8e7396ced2899084c6',
+          site: 'datadoghq.com',
+          forwardConsoleLogs: 'true',
+          forwardErrorsToLogs: true,
+          sessionSampleRate: 100,
+        })
+    </script>
 <a href="https://app.datadoghq.com/dashboard">https://app.datadoghq.com/dashboard</a>
 </body>
 </html>
