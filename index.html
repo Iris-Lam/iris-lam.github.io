@@ -13,17 +13,13 @@
       sessionSampleRate: 100,
     })
 </script>
-<script
-    src="https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js"
-    type="text/javascript">
-</script>
 <script>
     window.DD_RUM && window.DD_RUM.init({
       clientToken: 'pubf2ab8386eeca22e2c65a560cfc2a06bd',
       applicationId: '9dbae5ff-1773-43fd-b16b-ceadbc1715bf',
       site: 'datadoghq.com',
       service: 'testing',
-      env: '<ENV_NAME>',
+      env: 'test',
       // Specify a version number to identify the deployed version of your application in Datadog 
       // version: '1.0.0', 
       sessionSampleRate: 100,
